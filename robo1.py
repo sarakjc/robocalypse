@@ -7,7 +7,6 @@
 # imports
 import pygame, sys
 from random import randint
-from pygame import mixer
 import math
 
 # constants
@@ -135,11 +134,6 @@ bigbag = pygame.transform.scale(bigbag, (hudsize*10, hudsize*7))
 upgradebox = pygame.image.load("upgradebox.png")
 upgradebox = pygame.transform.scale(upgradebox, (hudsize*13, hudsize*8))
 
-# background sound: credit to AZALI
-mixer.init()
-mixer.music.load("theme of a shop that sells things you dont want.mp3")
-mixer.music.set_volume(1)
-mixer.music.play(loops = -1)
 
 # functions
 # hud displays
